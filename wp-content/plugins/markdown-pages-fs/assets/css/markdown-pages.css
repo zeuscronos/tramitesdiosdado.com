@@ -1,0 +1,70 @@
+/* Container */
+.mpfs-markdown {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Headings */
+.mpfs-markdown h1,
+.mpfs-markdown h2,
+.mpfs-markdown h3,
+.mpfs-markdown h4 {
+  line-height: 1.25;
+  margin: 1.6em 0 0.6em;
+}
+
+.mpfs-markdown h1 {
+  font-size: 2rem;
+}
+.mpfs-markdown h2 {
+  font-size: 1.6rem;
+}
+.mpfs-markdown h3 {
+  font-size: 1.3rem;
+}
+
+/* Paragraphs + lists */
+.mpfs-markdown p {
+  margin: 0 0 1em;
+}
+.mpfs-markdown ul,
+.mpfs-markdown ol {
+  margin: 0 0 1em 1.25em;
+}
+.mpfs-markdown li {
+  margin: 0.35em 0;
+}
+
+/* Links */
+.mpfs-markdown a {
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+.mpfs-markdown blockquote {
+  margin: 1.2em 0;
+  padding: 0.75em 1em;
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Code */
+.mpfs-markdown code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95em;
+  padding: 0.15em 0.35em;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+}
+
+.mpfs-markdown pre {
+  overflow: auto;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.mpfs-markdown pre code {
+  padding: 0;
+  background: transparent;
+}

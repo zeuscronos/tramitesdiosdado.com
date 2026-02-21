@@ -45,6 +45,8 @@ class MPFS_Markdown_Pages_Filesystem {
     add_action('admin_notices', [$this, 'admin_notices']);
 
     add_action('wp_head', [$this, 'inject_markdown_page_css']);
+
+    add_action('wp_enqueue_scripts', [$this, 'enqueue_assets']);
   }
 
   public function add_metabox() {
@@ -339,17 +341,18 @@ class MPFS_Markdown_Pages_Filesystem {
       require_once $autoload;
 
       $config = [
-        'html_input' => 'strip',          // no raw HTML
+        'html_input' => 'strip',
         'allow_unsafe_links' => false,
       ];
 
       $converter = new League\CommonMark\CommonMarkConverter($config);
       $html = $converter->convert($markdown)->getContent();
-      return wp_kses_post($html);
+
+      return '<div class="mpfs-markdown">' . wp_kses_post($html) . '</div>';
     }
 
     // Fallback: show preformatted markdown (safe)
-    return '<pre>' . esc_html($markdown) . '</pre>';
+    return '<pre class="mpfs-markdown">' . esc_html($markdown) . '</pre>';
   }
 
   public function filter_the_content($content) {
@@ -430,7 +433,6 @@ class MPFS_Markdown_Pages_Filesystem {
     $post_id = get_queried_object_id();
     if (!$post_id) return;
 
-    // Only pages that use Markdown FS
     $path = (string) get_post_meta($post_id, self::META_PATH, true);
     if (trim($path) === '') return;
 
@@ -444,9 +446,22 @@ class MPFS_Markdown_Pages_Filesystem {
 
       /* Bottom padding so content doesn\'t stick to viewport */
       #main-content .container {
+        padding-top: 0 !important;
         padding-bottom: 3rem;
       }
     </style>';
+  }
+
+  public function enqueue_assets() {
+    if (!is_singular('page')) return;
+
+    $post_id = get_queried_object_id();
+    if (!$post_id) return;
+
+    $path = (string) get_post_meta($post_id, self::META_PATH, true);
+    if (trim($path) === '') return;
+
+    wp_enqueue_style('mpfs-markdown-css', plugin_dir_url(__FILE__) . 'assets/css/markdown-pages.css', [], '0.1.0');
   }
 }
 

@@ -4,6 +4,11 @@ SetEnv WORDPRESS_DB_NAME "diosdado_2"
 SetEnv WORDPRESS_DB_USER "diosdado_2"
 SetEnv WORDPRESS_DB_PASSWORD "BOKCoqo)jixp9s9W"
 
+# UTF-8 for plain files like README.md ---
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .md .txt
+AddType text/plain .md
+
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.

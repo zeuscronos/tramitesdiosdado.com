@@ -1,4 +1,5 @@
 *.bak
+wp-content/cache
 wp-content/et-cache
 _debug/**
 !_debug/database/database.sql

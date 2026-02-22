@@ -1,4 +1,4 @@
-# Visados de familiar de ciudadano de la Unión Europea (español, francés, etc.)
+# Visado de familiar de ciudadano de la Unión Europea (español, francés, etc.)
 
 Este visado se puede solicitar por hijos menores de 26 años, por cónyuges o parejas, o por progenitores mayores de 65 años dependientes económicamente de un español, francés, italiano, etc. Para este tipo de visado existen variantes y situaciones diferentes con requisitos variables, por lo cual se recomienda una cita de consulta, ya sea a distancia o presencial, donde poder asesorar correctamente en el proceso y verificar los requisitos para tener mayor seguridad en el éxito del visado.
 

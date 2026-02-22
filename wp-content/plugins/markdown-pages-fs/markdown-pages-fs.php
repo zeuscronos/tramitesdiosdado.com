@@ -67,9 +67,14 @@ class MPFS_Markdown_Pages_Filesystem {
     $mode = (string) get_post_meta($post->ID, self::META_MODE, true);
     if ($mode === '') $mode = self::MODE_REPLACE;
 
-    // Show markdown from DB mirror (what user last saved), not from file.
-    // This prevents surprising UI when file is edited externally.
-    $md = (string) get_post_meta($post->ID, self::META_DB_MD, true);
+    // Prefer file contents in editor, fallback to DB mirror if file missing/unreadable.
+    list($fileMd, $fileErr) = $this->load_markdown_for_post((int)$post->ID);
+
+    if (trim($fileMd) !== '') {
+      $md = $fileMd;
+    } else {
+      $md = (string) get_post_meta($post->ID, self::META_DB_MD, true);
+    }
 
     $defaultPath = $post->post_name ? ($post->post_name . '.md') : '';
 

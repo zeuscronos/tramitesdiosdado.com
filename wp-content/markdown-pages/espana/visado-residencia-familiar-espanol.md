@@ -28,7 +28,6 @@ Una vez obtenidas las credenciales, reservamos la cita previa coordinación con 
 ### Fase 3: Preparación del expediente de solicitud para asistir a la cita
 
 Documentos necesarios que debe aportar el solicitante. También pueden solicitar el servicio de obtención y legalización de certificaciones en caso de tener dificultades:
-
 - Pasaporte válido.
 - Copia de las 32 páginas del pasaporte del solicitante.
 - Copia de todas las páginas del pasaporte del ciudadano español.

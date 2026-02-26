@@ -11,3 +11,23 @@ Necesitamos disponer de los datos de la ficha de cliente del progenitor español
 En este trámite con menores son dos fases solamente:
 1. Gestión de la cita del progenitor para el menor. El progenitor debe tener en cuenta que no se puede reservar la cita si los documentos NO ESTÁN LEGALIZADOS, LISTOS.
 2. Preparar el expediente para la cita.
+
+PARA LLENAR EL FORMULARIO DE DATOS PARA EL REGISTRO CIVIL, NECESITAMOS ESTOS DATOS DE LOS PROGENITORES DEL REGISTRADO:
+
+DEL PADRE:
+1.  Estado civil al nacer
+2.  Estado civil ahora.
+3.  Nacionalidad al nacer
+4.  Nacionalidad ahora.
+5.  Domicilio actual
+6.  Numero del carnet de identidad.
+
+DE LA MADRE:
+1.  Estado civil al nacer
+2.  Estado civil ahora.
+3.  Nacionalidad al nacer
+4.  Nacionalidad ahora.
+5.  Domicilio actual
+6.  Numero del carnet de identidad.
+7.  DEL PROGENITOR (madre o padre) que no está en la cadena de descendencia,
+necesito además: Fecha de nacimiento.

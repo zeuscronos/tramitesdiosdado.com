@@ -1,5 +1,5 @@
-# Puede ver los detalles de requisitos para visado turístico a México.
+# Trámites México
 
-## [México](mexico/__mexico.md)
+Seleccione una de las siguientes opciones:
 
-- [Visado de Turismo](mexico/visado-turismo.md)
+- [Visado de Turismo](/mexico-visado-turismo)

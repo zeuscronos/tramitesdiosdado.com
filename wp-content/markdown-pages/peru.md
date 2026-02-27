@@ -1,5 +1,5 @@
-Los requisitos y procedimientos para el visado turístico a Perú lo puede ver a continuación:
+# Trámites Perú
 
-# [Perú](peru/__peru)
+Seleccione una de las siguientes opciones:
 
-- [Visado Turístico](peru-visado-turismo)
+- [Visado de Turismo](/peru-visado-turismo)
